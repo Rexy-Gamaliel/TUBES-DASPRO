@@ -1,5 +1,5 @@
-def load_file():  
-  user = input('Masukkan nama File User: ')
+def load_file():
+	user = input('Masukkan nama File User: ')
 	wahana = input('Masukkan nama File Daftar Wahana: ')
 	beli_tiket = input('Masukkan nama File Pembelian Tiket: ')
 	guna_tiket = input('Masukkan nama File Penggunaan Tiket: ')
@@ -16,3 +16,5 @@ def load_file():
 	kritiksaran_file = csv.reader(open(kritiksaran, 'r'))
 
 	print("File perusahaan Willy Wangky's Chocolate Factory telah di-load")
+
+	return (user_file, wahana_file,beli_tiket_file,guna_tiket_file,milik_tiket_file,refund_file,kritiksaran_file)
