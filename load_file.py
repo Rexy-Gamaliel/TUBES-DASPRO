@@ -18,3 +18,6 @@ def load_file():
 	print("File perusahaan Willy Wangky's Chocolate Factory telah di-load")
 
 	return (user_file, wahana_file,beli_tiket_file,guna_tiket_file,milik_tiket_file,refund_file,kritiksaran_file)
+
+##Program utama
+(user_file, wahana_file,beli_tiket_file,guna_tiket_file,milik_tiket_file,refund_file,kritiksaran_filer)=load_file()
