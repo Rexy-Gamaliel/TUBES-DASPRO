@@ -9,8 +9,7 @@ def toArray (filename):
 		li=[]
 		for field in row:
 			li.append(field)
-		tup=tuple(li)
-		arr.append(tup)
+		arr.append(li)
 
 	return(arr)
 
