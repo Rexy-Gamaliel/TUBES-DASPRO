@@ -1,7 +1,8 @@
 import csv
 
 def toArray (filename):
-	file=csv.reader(open(filename, 'r'))
+	f = open(filename, 'r')
+	file=csv.reader(f)
 
 	arr=[]
 
@@ -10,6 +11,8 @@ def toArray (filename):
 		for field in row:
 			li.append(field)
 		arr.append(li)
+
+	f.close()
 
 	return(arr)
 
@@ -28,6 +31,7 @@ def load_file():
 		file_refund = toArray(refund)
 		kritiksaran = input('Masukkan nama File Kritik dan Saran: ')
 		file_ks = toArray(kritiksaran)
+		print("File perusahaan Willy Wangky's Chocolate Factory telah di-load.")
 		return(file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, file_refund, file_ks)
 
 # Ini nanti di fungsi utama ada ini
