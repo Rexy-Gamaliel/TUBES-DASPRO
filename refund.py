@@ -13,8 +13,7 @@ def refund (username_refund):
                 if temp==0:
                     del file_kepemilikan[i]
                 else:
-                    row[2]=str(temp)
-                    file_kepemilikan[i]=row
+                    file_kepemilikan[i][2]=temp
                 for row_wahana in file_wahana:
                     if id_wahana == row_wahana[0]:
                         price = int(row_wahana[2])
