@@ -1,16 +1,24 @@
 import csv
 
 def toArray (filename):
-	f = open(filename, 'r')
+	f = open('user.csv', 'r')
 	file=csv.reader(f)
+	row=next(file)
 
-	arr=[]
+	pjgkolom=0
 
+	for field in row:
+	    pjgkolom+=1
+
+	arr = [['string' for j in range (pjgkolom)] for i in range (200)]
+
+	baris=0
 	for row in file:
-		li=[]
-		for field in row:
-			li.append(field)
-		arr.append(li)
+	    kolom=0
+	    for field in row:
+	        arr[baris][kolom]=field
+	        kolom+=1
+	    baris+=1
 
 	f.close()
 
