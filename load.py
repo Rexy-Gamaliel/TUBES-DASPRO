@@ -10,7 +10,7 @@ def toArray (filename):
 	for field in row:
 	    pjgkolom+=1
 
-	arr = [['string' for j in range (pjgkolom)] for i in range (200)]
+	arr = [['.' for j in range (pjgkolom)] for i in range (200)]
 
 	baris=0
 	for row in file:
