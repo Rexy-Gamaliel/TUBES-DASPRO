@@ -1,7 +1,7 @@
 import csv
 
 def toArray (filename):
-	f = open('user.csv', 'r')
+    f = open('user.csv', 'r')
 	file=csv.reader(f)
 	row=next(file)
 
@@ -13,15 +13,19 @@ def toArray (filename):
 	arr = [['.' for j in range (pjgkolom)] for i in range (200)]
 
 	baris=0
+	kolom=0
+	for field in row:
+	    arr[baris][kolom]=field
+	    kolom+=1
+
 	for row in file:
-	    kolom=0
+	    kolom=0\
 	    for field in row:
 	        arr[baris][kolom]=field
 	        kolom+=1
 	    baris+=1
 
 	f.close()
-
 	return(arr)
 
 def load_file():
