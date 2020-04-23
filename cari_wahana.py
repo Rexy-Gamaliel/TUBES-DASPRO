@@ -1,7 +1,8 @@
 import csv
 
 def cariWahana(file_wahana):
-    #file_wahana: array wahana
+    #Mencari wahana berdasarkan input batas umur dan tinggi
+    
     #file_wahana: ['ID_Wahana', 'Nama_Wahana', 'Harga_Tiket', 'Batasan_Umur', 'Batasan_Tinggi']
     #input_umur: input jenis batasan umur               valid: 1, 2, 3
     #input_tinggi: input jenis batasan tinggi badan     valid: 1, 2
@@ -30,15 +31,15 @@ def cariWahana(file_wahana):
         input_tinggi = input("Batasan tinggi badan: ")
     
         #konversi input yang dimaksud ke format data dalam array
-    if input_umur == '1':
+    if (input_umur == '1'):
         input_umur = "anak-anak"
-    elif input_umur == '2':
+    elif (input_umur == '2'):
         input_umur = "dewasa"
-    elif input_umur == '3':
+    elif (input_umur == '3'):
         input_umur = "semua umur"
-    if input_tinggi == '1':
+    if (input_tinggi == '1'):
         input_tinggi = ">170"
-    elif input_tinggi == '2':
+    elif (input_tinggi == '2'):
         input_tinggi = "tanpa batasan"
     
     # pencarian wahana
