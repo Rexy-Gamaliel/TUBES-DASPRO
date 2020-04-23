@@ -11,7 +11,11 @@ def refund (username_refund):
             if jumlah <= int(row[2]):
                 temp=int(row[2])-jumlah
                 if temp==0:
-                    del file_kepemilikan[i]
+                    j=1
+                    while (file_kepemilikan[i+j][0]!='.'):
+                        file_kepemilikan[i]=file_kepemilikan[i+j]
+                        j+=1
+                    file_kepemilikan[i]=['.','.','.','.','.','.','.']
                 else:
                     file_kepemilikan[i][2]=temp
                 for row_wahana in file_wahana:
@@ -27,8 +31,15 @@ def refund (username_refund):
                         break
                     j+=1
                 print("Refund berhasil. Saldo anda sekarang " + row_user[6])
-                li = [username_refund, tanggal, id_wahana, jumlah]
-                file_refund.append(li)
+                j=0
+                for row_refund in file_refund:
+                    if(row_refund[0]=="."):
+                        file_refund[j][0]=username_refund
+                        file_refund[j][1]=tanggal
+                        file_refund[j][2]=id_wahana
+                        file_refund[j][3]=jumlah
+                    break
+                    j+=1
             else:
                 print("Anda hanya memiliki " + row[2] + " tiket untuk wahana ini.")
             i+=1
@@ -36,5 +47,3 @@ def refund (username_refund):
 
     if not found:
         print("Anda tidak memiliki tiket wahana ini.")
-
-
