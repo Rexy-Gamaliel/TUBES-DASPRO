@@ -43,29 +43,32 @@ file_beli = toArray(beli_tiket)
 milik_tiket = input('Masukkan nama File Kepemilikan Tiket: ')
 file_kepemilikan = toArray(milik_tiket)                             
 
-def beli(username):												#fungsi utama
+def beli(username, file_user, file_wahana, file_beli, file_kepemilikan):
 	ID_wahana = input('Masukkan ID wahana: ')
 	tanggal = input('Masukkan tanggal hari ini: ')
 	jumlah_tiket = int(input('Jumlah tiket yang dibeli: '))
-	
+
 	syarat_tinggi = False
 	syarat_umur = False
 	syarat_saldo = False
-	
+
 	for row_user in file_user:
 		if (row_user[3] == username):
 			tinggi = int(row_user[2])
 			saldo = int(row_user[6])
 			tanggal_lahir = row_user[1]
 			tahun_lahir = int(tanggal_lahir[-4:])
-			
+			jenisakun = row_user[7]
+
 	tahun_sekarang = int(tanggal[-4:])
 	umur = tahun_sekarang - (tahun_lahir)
-	
+
 	for row_wahana in file_wahana:
 		if (row_wahana[0] == ID_wahana):
 			nama_wahana = row_wahana[1]
 			harga_tiket = int(row_wahana[2])
+			if (jenisakun == "Gold"): # Bagian dari spesifikasi bonus akun gold
+				harga_tiket = harga_tiket//2
 			total_harga = harga_tiket*jumlah_tiket
 			if (saldo > total_harga):
 				syarat_saldo = True
@@ -89,7 +92,7 @@ def beli(username):												#fungsi utama
 			else:
 				syarat_tinggi = True
 				syarat_umur = True
-	
+
 	if (syarat_tinggi==False) or (syarat_umur==False):
 		print('Anda tidak memenuhi persyaratan untuk memainkan wahana ini.')
 		print('Silakan menggunakan wahana lain yang tersedia.')
@@ -105,11 +108,14 @@ def beli(username):												#fungsi utama
 		for row_milik in file_kepemilikan:
 			if (row_milik[0] == username):
 				row_milik[2] = jumlah_tiket
-				
-	
+
+
 	for row_user in file_user:
 		if (row_user[3] == username):
 			row_user[6] = str(saldo)
+
+	return(file_user, file_beli, file_kepemilikan)
+
 			
 	 
 
