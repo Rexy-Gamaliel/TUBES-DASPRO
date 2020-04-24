@@ -1,8 +1,7 @@
 
 import load
-import save
 
-def tambah_wahana ():
+def tambah_wahana (file_wahana):
     file_wahana = load.toArray("wahana.csv")
     print("Masukkan informasi wahana yang ditambahkan:")
 
@@ -24,6 +23,6 @@ def tambah_wahana ():
             file_wahana[j][4]=tinggi
             break
         j+=1
-    save.fromArray(file_wahana,"wahana.csv")
-
-tambah_wahana()
+    
+    #Mengembalikan file_wahana yang sudah ditambahkan row wahana baru
+    return(file_wahana)
