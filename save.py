@@ -31,6 +31,7 @@ def save_file(file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, f
 #	file_kepemilikan	    milik_tiket
 #	file_refund		        refund
 #	file_ks     	        kritiksaran
+#   file_hilang             hilang
 #   Fungsi fromArray(arrayname, filename) memindahkan data array ke csv
 
 
@@ -54,6 +55,9 @@ def save_file(file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, f
     
     kritiksaran = input('Masukkan nama File Kritik dan Saran: ')
     fromArray(file_ks, kritiksaran)
+    
+    hilang = input('Masukkan nama File Kehilangan Tiket: ')
+    fromArray(file_hilang, hilang)
     
     print("File perusahaan Willy Wangky's Chocolate Factory telah di-save.")
 
