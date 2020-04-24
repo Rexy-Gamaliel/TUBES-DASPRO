@@ -1,8 +1,5 @@
-
-import load
-
 def tambah_wahana (file_wahana):
-    file_wahana = load.toArray("wahana.csv")
+    #Admin dapat menambah wahana
     print("Masukkan informasi wahana yang ditambahkan:")
 
     idwahana = input("Masukkan ID Wahana: ")
