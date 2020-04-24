@@ -1,4 +1,4 @@
-import load
+#import load
 import basics
 
 #searching user
@@ -15,11 +15,11 @@ def login_user (arrname,username,password,leng):
             i += 1
     return (i,found)
 
-def ceklogin ():
+def ceklogin (file_user):
     uname = input("Masukkan username: ")
     pas = input("Masukkan password: ")
 
-    file_user = load.toArray("user.csv")
+    #file_user = load.toArray("user.csv")
     le = basics.length(file_user)
     (i,Found) = login_user(file_user, uname, pas,le)
     
