@@ -37,29 +37,29 @@ def toArray (filename):
     row_size = [201, 61, 76, 76, 401, 76, 101]
 
     if (filename == 'user.csv'):
-        arr = [['.' for j in range (pjgkolom)] for i in range(row_size[0]-1)]
-	arr [row_size[0]] = '*'
+        arr = [['.' for j in range (pjgkolom)] for i in range(row_size[0])]
+        arr [row_size[0]-1] = ['*' for j in range (pjgkolom)]
     elif (filename == 'wahana.csv'):
-        arr = [['.' for j in range (pjgkolom)] for i in range(row_size[1]-1)]
-	arr [row_size[1]] = '*'
+        arr = [['.' for j in range (pjgkolom)] for i in range(row_size[1])]
+        arr [row_size[1]-1] = ['*' for j in range (pjgkolom)]
     elif (filename == 'pembelian.csv'):
-        arr = [['.' for j in range (pjgkolom)] for i in range(row_size[2]-1)]
-	arr [row_size[2]] = '*'
+        arr = [['.' for j in range (pjgkolom)] for i in range(row_size[2])]
+        arr [row_size[2]-1] = ['*' for j in range (pjgkolom)]
     elif (filename == 'penggunaan.csv'):
-        arr = [['.' for j in range (pjgkolom)] for i in range(row_size[3]-1)]
-	arr [row_size[3]] = '*'
+        arr = [['.' for j in range (pjgkolom)] for i in range(row_size[3])]
+        arr [row_size[3]-1] = ['*' for j in range (pjgkolom)]
     elif (filename == 'kepemilikan_tiket.csv'):
-        arr = [['.' for j in range (pjgkolom)] for i in range(row_size[4]-1)]
-	arr [row_size[4]] = '*'
+        arr = [['.' for j in range (pjgkolom)] for i in range(row_size[4])]
+        arr [row_size[4]-1] = ['*' for j in range (pjgkolom)]
     elif (filename == 'refund_tiket.csv'):
-        arr = [['.' for j in range (pjgkolom)] for i in range(row_size[5]-1)]
-	arr [row_size[5]] = '*'
+        arr = [['.' for j in range (pjgkolom)] for i in range(row_size[5])]
+        arr [row_size[5]-1] = ['*' for j in range (pjgkolom)]
     elif (filename == 'kritik_dan_saran.csv'):
-        arr = [['.' for j in range (pjgkolom)] for i in range(row_size[6]-1)]
-	arr [row_size[6]] = '*'
+        arr = [['.' for j in range (pjgkolom)] for i in range(row_size[6])]
+        arr [row_size[6]-1] = ['*' for j in range (pjgkolom)]
     else:   #Jaga-jaga kalau nama file .csv tidak mengikuti format
-        arr = [['.' for j in range (pjgkolom)] for i in range(200)]
-	arr [201] = '*'
+        arr = [['.' for j in range (pjgkolom)] for i in range(201)]
+        arr [200] = ['*' for j in range (pjgkolom)]
 
     # Memasukkan data csv ke array
     baris=0
