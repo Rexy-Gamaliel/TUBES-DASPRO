@@ -4,13 +4,14 @@
 
 def length(array):
     # Menghitung banyak data dalam array
-    # EOF: mark berupa '.'
+    # EOP: mark berupa '.'
+    # EOF: mark berupa '*'
     # Semua array hasil load diasumsikan memiliki elemen berupa array
     # dan mengandung setidaknya mark
     count = 0
     for baris in array:
         count += 1
-        if (baris[0] == '.'):
+        if (baris[0] == '.') or (baris[0] == '*'):
             break
     return count
 
@@ -43,3 +44,13 @@ def sort_insertion(array, idxBanding):
             array[0] = Temp
     
     return(array)
+
+def delete_row(i,arrname,leng):
+    # menghapus 1 row array
+    #KAMUS
+    #  i  = index awal array yang akan di delete
+    #  j  = variabel iterasi
+    #leng = panjang array
+    for j in range (i+1,leng)
+        arrname[j-1] = arrname[j]
+    arrname[leng]=['.']
