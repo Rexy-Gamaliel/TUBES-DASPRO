@@ -28,7 +28,7 @@ def save_file(file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, f
 #	file_kepemilikan	    milik_tiket
 #	file_refund		        refund
 #	file_ks     	        kritiksaran
-#   file_hilang             hilang
+#      file_hilang             hilang
 #   Fungsi fromArray(arrayname, filename) memindahkan data array ke csv
 
 
