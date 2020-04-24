@@ -34,7 +34,7 @@ def toArray (filename):
     # 4. kepemilikan(400),
     # 5. refund(75),
     # 6. kritiksaran(100)
-    row_size = [200, 60, 75, 75, 400, 75, 100]
+    row_size = [201, 61, 76, 76, 401, 76, 101]
 
     if (filename == 'user.csv'):
         arr = [['.' for j in range (pjgkolom)] for i in range(row_size[0])]
