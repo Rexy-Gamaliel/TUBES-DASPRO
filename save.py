@@ -17,9 +17,6 @@ def fromArray(arrayname, filename):
         if (field == '.'):
             break
         f.write('\n')
-        
-def tulisHeader(filename):
-    
 
 def save_file(file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, file_refund, file_ks):
 #   Parameter save_file() adalah nama-nama array sebagai berikut:
