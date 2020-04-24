@@ -50,4 +50,4 @@ def guna_tiket (uname, file_kepemilikan, file_pakai):
     
     return (file_kepemilikan, file_pakai)
 
-guna_tiket(login_user.ceklogin(),file_kepemilikan, file_pakai)
+guna_tiket(login_user.ceklogin(file_user),file_kepemilikan, file_pakai)
