@@ -9,13 +9,18 @@ import belitiket_07
 import gunatiket_08
 import refund_09
 import kritiksaran_10
-
+import lihatks_11
 import tambahwahana_12
 import topup_13
 import riwayatwahana_14
-
+import lihattiket_15
 import keluar_16
+
 import upgrade_B02
+
+import laporhilang_B04
+
+import basics
 
 #Fungsi Utama
 loggedin=False
@@ -67,7 +72,7 @@ while not keluarprogram:
         elif (menu=="3"):
             cariwahana_06.cariwahana(file_wahana)
         elif (menu=="4"):
-            x=True
+            lihatks_11.lihat_laporan(file_ks)
         elif (menu=="5"):
             file_wahana = tambahwahana_12.tambah_wahana(file_wahana)
         elif (menu=="6"):
@@ -75,7 +80,7 @@ while not keluarprogram:
         elif (menu=="7"):
             riwayatwahana_14.riwayatWahana(file_user)
         elif (menu=="8"):
-            x=True
+            lihattiket_15.tiket_pemain(file_kepemilikan, file_wahana)
         elif (menu=="9"):
             save_03.save_file(file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, file_refund, file_ks, file_kehilangan)
         elif(menu=="10"):
@@ -97,6 +102,7 @@ while not keluarprogram:
         print("4. Refund Tiket")
         print("5. Kritik dan Saran")
         print("6. Save File")
+        print("7. Lapor Kehilangan Tiket")
         print("0. Exit")
         print()
         menu=input()
@@ -113,6 +119,8 @@ while not keluarprogram:
             file_ks = kritiksaran_10.tulisKritikSaran(user_info[3], file_ks)
         elif (menu=="6"):
             save_03.save_file(file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, file_refund, file_ks)
+        elif (menu=="7"):
+            file_hilang = laporhilang_B04.hilang(file_hilang, file_kepemilikan)
         elif (menu=="0"):
             keluarprogram = keluar_16.exit (file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, file_refund, file_ks)
         else:
