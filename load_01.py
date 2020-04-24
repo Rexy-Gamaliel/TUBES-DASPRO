@@ -86,31 +86,31 @@ def toArray (filename):
 
 # Membaca nama file
 def load_file():
-		user = input('Masukkan nama File User: ')
-		file_user = toArray(user)
+        user = input('Masukkan Nama File User: ')
+        file_user = toArray(user)
 
-		wahana = input('Masukkan nama File Daftar Wahana: ')
-		file_wahana = toArray(wahana)
+        wahana = input('Masukkan Nama File Daftar Wahana: ')
+        file_wahana = toArray(wahana)
 
-		beli_tiket = input('Masukkan nama File Pembelian Tiket: ')
-		file_beli = toArray(beli_tiket)
+        beli_tiket = input('Masukkan Nama File Pembelian Tiket: ')
+        file_beli = toArray(beli_tiket)
 
-		guna_tiket = input('Masukkan nama File Penggunaan Tiket: ')
-		file_pakai = toArray(guna_tiket)
+        guna_tiket = input('Masukkan Nama File Penggunaan Tiket: ')
+        file_pakai = toArray(guna_tiket)
 
-		milik_tiket = input('Masukkan nama File Kepemilikan Tiket: ')
-		file_kepemilikan = toArray(milik_tiket)
+        milik_tiket = input('Masukkan Nama File Kepemilikan Tiket: ')
+        file_kepemilikan = toArray(milik_tiket)
 
-		refund = input('Masukkan nama File Refund Tiket: ')
-		file_refund = toArray(refund)
+        refund = input('Masukkan Nama File Refund Tiket: ')
+        file_refund = toArray(refund)
 
-		kritiksaran = input('Masukkan nama File Kritik dan Saran: ')
-		file_ks = toArray(kritiksaran)
+        kritiksaran = input('Masukkan Nama File Kritik dan Saran: ')
+        file_ks = toArray(kritiksaran)
 
-        tikethilang = input('Masukkan nama File Kritik dan Saran: ')
-		file_kehilangan = toArray(tikethilang)
+        tikethilang = input('Masukkan Nama File Kehilangan: ')
+        file_kehilangan = toArray(tikethilang)
 
-		print("File perusahaan Willy Wangky's Chocolate Factory telah di-load.")
+        print("File perusahaan Willy Wangky's Chocolate Factory telah di-load.")
 
         #Mengembalikan array yang sudah dibuat
-		return(file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, file_refund, file_ks, file_kehilangan)
+        return(file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, file_refund, file_ks, file_kehilangan)
