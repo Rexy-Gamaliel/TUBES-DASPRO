@@ -9,6 +9,7 @@ import csv
 # kepemilikan_tiket.csv       milik_tiket       file_kepemilikan
 # refund_tiket.csv            refund            file_refund
 # kritik_dan_saran.csv        kritiksaran       file_ks
+# kehilangan.csv	      hilang		file_hilang
 
 
 def toArray (filename):
@@ -103,6 +104,9 @@ def load_file():
 
 		kritiksaran = input('Masukkan nama File Kritik dan Saran: ')
 		file_ks = toArray(kritiksaran)
+		
+		hilang = input('Masukkan nama File Kehilangan Tiket: ')
+		file_hilang = toArray(hilang)
 
 		print("File perusahaan Willy Wangky's Chocolate Factory telah di-load.")
-		return(file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, file_refund, file_ks)
+		return(file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, file_refund, file_ks, file_hilang)
