@@ -1,0 +1,26 @@
+ID_Wahana,Nama_Wahana,Harga_Tiket,Batasan_Umur,Batasan_Tinggi
+KMD110,Komidi Putar,20000,anak-anak,tanpa batasan
+BLL120,Bianglala,10000,anak-anak,tanpa batasan
+KOR130,Kora-Kora,25000,semua umur,tanpa batasan
+HYS140,Hysteria,25000,dewasa,>170
+VER150,Vertigo,25000,dewasa,>170
+TOR160,Tornado,25000,dewasa,>170
+IST170,Istana Boneka,10000,semua umur,tanpa batasan
+GIA180,Giant Swing,25000,semua umur,tanpa batasan
+ONT190,Ontang-Anting,25000,semua umur,tanpa batasan
+ROL200,Roller Coaster,25000,dewasa,>170
+ARU210,Arung Jeram,25000,dewasa,>170
+KAC220,Rumah Kaca,10000,semua umur,tanpa batasan
+MIR230,Rumah Miring,10000,semua umur,tanpa batasan
+NIA240,Niagara,25000,semua umur,tanpa batasan
+TRE250,Treasure Land,20000,anak-anak,tanpa batasan
+HAN260,Rumah Hantu ,20000,semua umur,tanpa batasan
+CIN270,4D Cinema,30000,dewasa,tanpa batasan
+SPE280,Special Effect Action,30000,semua umur,tanpa batasan
+SCI290,Science Center,10000,semua umur,tanpa batasan
+ROC300,Rock Climb,30000,dewasa,>170
+PLY310,Playground,10000,anak-anak,tanpa batasan
+BOM320,Bombomcar,20000,semua umur,tanpa batasan
+AMP330,Amphitheatre,20000,semua umur,tanpa batasan
+PAI340,Paint Ball,30000,dewasa,tanpa batasan
+LEG350,Lego World,20000,semua umur,tanpa batasan

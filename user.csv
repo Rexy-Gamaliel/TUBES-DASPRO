@@ -1,0 +1,101 @@
+Nama,Tanggal_Lahir,Tinggi_Badan,Username,Password,Role,Saldo,Jenis_Pemain
+Aaron Hank,2/1/2001,171,aron01,1010,Pemain,170000,Gold
+Abbey Ran,19/01/2010,115,abey02,1110,Pemain,189000,Gray
+Abel Chun,17/06/1977,173,abel03,1238,Admin,0,0
+Abigail Frank,15/04/1987,172,abi04,1245,Pemain,170000,Gray
+Acep Ucep,20/04/1983,167,acep05,1725,Pemain,75000,Gray
+Adam Levine,19/03/1994,188,adam06,1785,Pemain,118000,Gold
+Agnes Monicur,18/04/2000,160,agne07,1902,Pemain,89000,Gold
+Ahmad Scott,23/09/2007,133,ahma08,1928,Pemain,123000,Gray
+Alexander,30/09/1999,173,alex09,1987,Pemain,165000,Gold
+Ali Tareq,25/08/2008,128,ali10,2093,Pemain,200000,Gold
+Apple Fiona,22/04/2010,110,aple11,2227,Pemain,80000,Gray
+Archimedes,16/12/2001,170,arch12,2228,Pemain,83000,Gray
+Ardhito Pramono,24/02/1999,173,ardh13,2229,Admin,0,0
+Austin Gorge,25/04/2010,112,aust14,2234,Pemain,380000,Gray
+Bacon Francis,26/09/1998,170,baco15,2273,Pemain,123000,Gold
+Bailey Heil,27/01/1999,165,bail16,2371,Pemain,254000,Gray
+Barney ,12/2/1979,180,barn17,2398,Pemain,67000,Gray
+Benedict,29/04/1990,175,bene18,2678,Pemain,489000,Gray
+Benson Oli,30/11/1992,176,bens19,2687,Pemain,400000,Gold
+Bernard Bear,4/8/2010,112,bern20,2831,Pemain,150000,Gold
+Billie Eilish,2/5/2006,140,bill21,2840,Admin,0,0
+Blanc Mount,3/9/2001,169,blan22,2837,Pemain,28000,Gray
+Botha Pik,19/11/2009,123,both23,2938,Pemain,130000,Gray
+Bowie David,5/5/2005,150,bowi24,2940,Pemain,275000,Gray
+Brady James,3/7/1979,179,brad25,2984,Pemain,40000,Gray
+Brandon,9/4/1988,180,bran26,3499,Pemain,79000,Gray
+Bruce Lee,8/5/1980,169,bruc27,3765,Admin,0,Gray
+Bryan James,12/5/1991,174,bry28,3892,Pemain,821000,Gold
+Caesar Daniel,10/8/2003,160,caes29,3918,Pemain,500000,Gray
+Camila Cabello,7/5/2007,130,cami30,3984,Pemain,45000,Gray
+Campbell,12/5/2010,113,camp31,4475,Pemain,20000,Gold
+Charlie Puth,13/05/2006,135,char32,4587,Pemain,444000,Gold
+Conan Gray,19/08/1974,177,con33,4687,Pemain,338000,Gold
+Daniel Hope,12/8/1996,175,dani34,4756,Pemain,98000,Gray
+Demi Lovato,9/8/1995,165,demi35,4765,Pemain,93000,Gray
+Diana Ross,17/11/1992,166,dia36,4876,Pemain,82000,Gray
+Doja Cat,7/2/1984,163,doja37,4983,Pemain,774000,Gray
+Don Henley,10/5/1986,171,don38,5789,Pemain,885000,Gold
+Drake,20/08/2009,120,drak39,5837,Pemain,27000,Gray
+Dua Lipa,5/9/2004,150,dua40,5980,Pemain,381000,Gold
+Duke Jonas,22/11/2008,125,duke41,6295,Pemain,100000,Gold
+Elvis,29/01/2006,131,elvi42,6437,Pemain,120000,Gray
+Eric Church,7/5/2014,80,eric43,6565,Pemain,130000,Gray
+Fergie,27/03/2012,100,ferg44,6655,Admin,0,0
+Freddie Mercury,20/10/2009,121,fred45,6748,Pemain,258000,Gray
+Grace Jones,19/09/1989,164,grac46,6895,Pemain,270000,Gold
+Graham Bell,28/05/2003,155,grah47,7021,Pemain,30000,Gold
+Hank William,29/01/2007,135,hank48,7090,Pemain,35000,Gold
+Hannah Montana,10/12/1994,166,hann49,7238,Pemain,55000,Gray
+Harry Style,7/4/2014,85,har50,7453,Pemain,59000,Gray
+Iggy Pop,1/9/2007,140,igy51,7474,Pemain,70000,Gray
+Isaac Newton,8/6/1999,175,isac52,7483,Pemain,75000,Gold
+Jack Johnson,5/10/1986,178,jack53,7648,Pemain,83000,Gray
+James Corben,25/11/1988,182,jam54,7684,Pemain,90000,Gold
+Janet Jackson,19/03/1981,183,jane55,7689,Pemain,92000,Gold
+Jeanne ,6/6/1999,170,jean56,7733,Admin,0,Gray
+Jessie J,30/11/2000,164,jess57,7738,Pemain,400000,Gray
+John Gill,8/6/2010,114,john58,7886,Pemain,480000,Gray
+Joy Tobing,16/03/2009,120,joy59,7928,Pemain,293000,Gold
+Justin Bieber,11/3/1987,185,just60,8349,Pemain,433000,Gray
+Kacey Kris,30/06/1999,163,kac61,8374,Pemain,180000,Gray
+Kanye West,12/6/2005,143,kane62,8383,Admin,0,0
+Katy Perry,13/08/2000,159,katy63,8472,Pemain,190000,Gold
+Keane,25/06/2002,163,kean64,8475,Pemain,193000,Gold
+Keith Urban,15/01/1969,189,kei65,8476,Pemain,290000,Gray
+Khalid,21/03/1985,187,khal66,8477,Pemain,80000,Gray
+Kylie Kendall,6/9/2004,140,kyl67,8484,Pemain,82000,Gray
+Lady Gaga,8/6/1991,162,lady68,8569,Pemain,511000,Gray
+Led Zeppelin,19/02/2015,85,led69,8588,Pemain,84000,Gold
+Lewis Capaldi,3/6/2001,170,lew70,8653,Pemain,66000,Gray
+Lil Wayne,21/08/1985,180,lil71,8695,Pemain,77000,Gray
+Lionel Rich,12/6/1983,182,lio72,8753,Pemain,22000,Gold
+Lorde,20/08/1987,164,lor73,8759,Pemain,70000,Gold
+Luke Bryan,26/05/1986,184,luke74,8764,Pemain,88000,Gray
+Maddie Jean,25/11/1990,167,mad75,8765,Pemain,222000,Gray
+Michelle Kut,6/12/1999,158,mich76,8769,Pemain,110000,Gray
+Mika Angelo,27/01/1976,188,mika77,8798,Admin,0,Gray
+Minnie Riperton,1/1/1991,161,min78,8822,Pemain,223000,Gold
+Nadin Amizah,29/04/1978,160,nad79,8873,Pemain,65000,Gray
+Nick Jonas,19/06/1975,182,nick80,8890,Admin,0,Gray
+Nacki Minaj,1/7/2010,100,nack81,9283,Pemain,74000,Gold
+Niki,12/9/2000,168,niki82,9292,Admin,0,Gold
+Oscar Peter,3/7/2015,88,osc83,9348,Pemain,90000,Gray
+Paul Simon,18/09/2002,164,paul84,9358,Pemain,100000,Gold
+Peter Kim,15/09/1987,188,pet85,9384,Pemain,130000,Gold
+Post Malone,6/11/1970,187,post86,9383,Pemain,280000,Gray
+Priyanka,7/7/1985,167,pri87,9382,Pemain,200000,Gray
+Purcell,12/12/1980,190,purc88,9485,Pemain,220000,Gray
+Rich Brian,15/08/1998,176,rich89,9488,Pemain,190000,Gray
+Rihanna,17/07/1972,166,riha90,9486,Admin,0,Gold
+Ringo Agus,5/7/1998,180,ring91,9586,Admin,0,Gray
+Rufus Dude,11/1/1999,181,ruf92,9833,Pemain,889000,Gray
+Shania Twain,23/04/2001,170,shan93,9846,Pemain,77000,Gold
+Shawn Mendes,28/01/2006,138,shaw94,9854,Pemain,68000,Gold
+Steve Job,5/10/2005,143,stev95,9864,Pemain,61000,Gold
+Stevie Wonder,16/07/1980,189,sie96,9884,Pemain,650000,Gray
+Tanya Tucker,17/12/2010,112,tan97,9911,Pemain,733000,Gray
+Taylor Swift,29/07/2016,60,tay98,9943,Pemain,858000,Gray
+Travis Scott,28/03/2015,79,trav99,9990,Pemain,77000,Gold
+William Jack,20/09/2014,84,wil100,9995,Pemain,88000,Gray
