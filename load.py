@@ -25,6 +25,7 @@ def toArray (filename):
 
     # Deklarasi array berdasarkan data csv
     # row_size menunjukkan berapa NMax maksimum untuk setiap csv
+    # EOF : mark berupa '*'
     # Secara berurutan:
     # 0. username(200),
     # 1. wahana(60),
@@ -37,20 +38,28 @@ def toArray (filename):
 
     if (filename == 'user.csv'):
         arr = [['.' for j in range (pjgkolom)] for i in range(row_size[0])]
+	arr [row_size[0]] = '*'
     elif (filename == 'wahana.csv'):
         arr = [['.' for j in range (pjgkolom)] for i in range(row_size[1])]
+	arr [row_size[1]] = '*'
     elif (filename == 'pembelian.csv'):
         arr = [['.' for j in range (pjgkolom)] for i in range(row_size[2])]
+	arr [row_size[2]] = '*'
     elif (filename == 'penggunaan.csv'):
         arr = [['.' for j in range (pjgkolom)] for i in range(row_size[3])]
+	arr [row_size[3]] = '*'
     elif (filename == 'kepemilikan_tiket.csv'):
         arr = [['.' for j in range (pjgkolom)] for i in range(row_size[4])]
+	arr [row_size[4]] = '*'
     elif (filename == 'refund_tiket.csv'):
         arr = [['.' for j in range (pjgkolom)] for i in range(row_size[5])]
+	arr [row_size[5]] = '*'
     elif (filename == 'kritik_dan_saran.csv'):
         arr = [['.' for j in range (pjgkolom)] for i in range(row_size[6])]
+	arr [row_size[6]] = '*'
     else:   #Jaga-jaga kalau nama file .csv tidak mengikuti format
         arr = [['.' for j in range (pjgkolom)] for i in range(200)]
+	arr [200] = '*'
 
     # Memasukkan data csv ke array
     baris=0
