@@ -3,7 +3,7 @@ import basics
 import login_user
 
 #searching array kepemilikan
-def validasi (arrname, uname, idwahana, jumtiket, leng):
+def validasi (arrname, file_user[i][0], idwahana, jumtiket, leng):
     #Fungsi melakukan validasi terhadap input user
     Found = False
     i=1
@@ -27,7 +27,7 @@ def validasi (arrname, uname, idwahana, jumtiket, leng):
 
     return(i,Found,arrname)
 
-def guna_tiket (uname, file_kepemilikan, file_pakai):
+def guna_tiket (file_user[i][0], file_kepemilikan, file_pakai):
     #Fungsi meminta input user terkait jumlah tiket yang akan digunakan
     id_wahana = input("Masukkan ID wahana: ")
     tanggal = input("Masukkan tanggal hari ini: ")
