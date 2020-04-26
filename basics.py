@@ -33,14 +33,12 @@ def sort_insertion(array, idxBanding):
         Temp = array[Pass]
         #Akan dibandingkan nilai Temp dengan array[i], untuk i [0, Pass-1]
         i = Pass - 1
-        while (Temp[idxBanding] < array[i][idxBanding] and i > 0):
+        while (Temp[idxBanding] < array[i][idxBanding] and i >= 0):
             array[i+1] = array[i]   #elemen terurut digeser
             i -= 1                  #pembandingan digeser ke depan
         #Temp[idxBanding] >= array[i][idxBanding] atau i = 0 (Temp adalah elemen terkecil)
-        if (Temp[idxBanding] >= array[i][idxBanding]):
-            array[i+1] = Temp   #karena saat keluar loop i yang tepat telah berkurang 1
-        else:
-            array[0] = Temp
+
+        array[i+1] = Temp   #karena saat keluar loop i yang tepat telah berkurang 1
     
     return(array)
 
@@ -58,14 +56,14 @@ def sort_insertion_reverse(array, idxBanding):
         Temp = array[Pass]
         #Akan dibandingkan nilai Temp dengan array[i], untuk i [0, Pass-1]
         i = Pass - 1
-        while (Temp[idxBanding] > array[i][idxBanding] and i > 0):
+        while (Temp[idxBanding] > array[i][idxBanding] and i >= 0):
             array[i+1] = array[i]   #elemen terurut digeser
             i -= 1                  #pembandingan digeser ke depan
-        #Temp[idxBanding] <= array[i][idxBanding] atau i = 0 (Temp adalah elemen terbesar)
-        if (Temp[idxBanding] <= array[i][idxBanding]):
-            array[i+1] = Temp   #karena saat keluar loop i yang tepat telah berkurang 1
-        else:
-            array[0] = Temp
+        #Temp[idxBanding] >= array[i][idxBanding] atau i = 0 (Temp adalah elemen terkecil)
+
+        array[i+1] = Temp   #karena saat keluar loop i yang tepat telah berkurang 1
+    
+    return(array)
 
 
 def delete_row(i, arrname, leng):
