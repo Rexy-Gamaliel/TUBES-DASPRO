@@ -25,4 +25,4 @@ def best_wahana(file_wahana, file_beli):
 
 	best_wahana = basics.sort_insertion_reverse(tiket_wahana,2)
 	for i in range(0,3):
-		print(i+1,'|',best_wahana[i][0],'|',best_wahana[i][1],'|',best_wahana[i][2])
+		print("{} | {} | {} | {}".format(i+1, best_wahana[i][0], best_wahana[i][1], best_wahana[i][2]))
