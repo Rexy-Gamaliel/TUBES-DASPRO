@@ -16,7 +16,12 @@ def ceklogin (file_user):
     pas = input("Masukkan password: ")
 
     #hitung len array
-    le = basics.length(file_user)
+    le = 0
+    for row in file_user:
+        if row[0]=='.':
+            break
+        else:
+            le += 1
 
     (i,Found) = login_user(file_user, uname, pas,le)
 

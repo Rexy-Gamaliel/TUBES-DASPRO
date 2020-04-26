@@ -13,6 +13,7 @@ def cari_pemain(file_user):
 
     # Mencari pemain
     found = False
+    golden = False
     i=0
     while not found:
         if file_user[i][3] == username:
@@ -20,7 +21,8 @@ def cari_pemain(file_user):
             print("Nama Pemain: " + file_user[i][0])
             print("Tinggi Pemain: " + file_user[i][2] + " cm")
             print("Tanggal Lahir Pemain: " + file_user[i][1])
-        i+=1
-
+            print("Golden account: {}".format("Ya" if golden else "No"))
+        i += 1
+    
     if not found:
         print("Pemain tidak ditemukan")

@@ -30,4 +30,8 @@ def riwayatWahana(file_pakai):
     
     #menampilkan hasil pencarian
     for baris in arrRiwayat:
-        print("{} | {} | {}".format(arrRiwayat[1], arrRiwayat[0], arrRiwayat[3]))
+        if (arrRiwayat[0] == '.'):
+            print("Belum ada riwayat penggunaan wahana.")
+            break
+        else: # arrRiwayat[0] != '.'
+            print("{} | {} | {}".format(baris[1], baris[0], baris[3]))

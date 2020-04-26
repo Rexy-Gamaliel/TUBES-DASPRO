@@ -1,6 +1,6 @@
 def validasiPass():
-    # Memastikan keamanan password user dengan memvalidasi password
-    # lalu melakukan hashing. Meminta password kepada user hingga valid
+    # Memastikan keamanan password user saat pertama kali signup dengan memvalidasi
+    # password lalu melakukan hashing. Meminta input password kepada user hingga valid
     # Ketentuan password:
     # 1. Mengandung angka, char huruf Kapital dan kecil
     # 2. Minimal terdiri atas 4 karakter
@@ -14,6 +14,11 @@ def validasiPass():
     # valid: array of boolean untuk memvalidasi keempat syarat di atas,
     # berturut-turut yaitu: HURUF KAPITAL, huruf kecil, angka, panjang pw
     # promptPass: boolean, untuk memastikan password sebelum prosedur berakhir
+    
+    print("\nKetentuan password: ")
+    print("1. Mengandung huruf kapital dan huruf kecil")
+    print("2. Mengandung angka")
+    print("3. Panjang password minimal 4 karakter\n")
     
     promptPass = True
     
@@ -42,6 +47,6 @@ def validasiPass():
         
         if (valid[0] == True and valid[1] == True and valid[2] == True and valid[3] == True):
             promptPass = False
-            return hash(pw)
+            return str(hash(pw))
         else:
             print("Password Anda tidak sesuai ketentuan.")

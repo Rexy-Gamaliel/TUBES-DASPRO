@@ -28,11 +28,13 @@ def toArray (filename):
     # Secara berurutan:
     # 0. username(200),
     # 1. wahana(60),
-    # 2. pembelian(75),
-    # 3. penggunaan(75),
+    # 2. pembelian(400),
+    # 3. penggunaan(400),
     # 4. kepemilikan(400),
     # 5. refund(75),
     # 6. kritiksaran(100)
+    # 7. kehilangan(60)
+    
     row_size = [200, 60, 400, 400, 400, 75, 100, 60]
 
     if (filename == 'user.csv'):
@@ -86,28 +88,28 @@ def toArray (filename):
 
 # Membaca nama file
 def load_file():
-        user = input('Masukkan Nama File User: ')
+        user = input('Masukkan nama File User: ')
         file_user = toArray(user)
 
-        wahana = input('Masukkan Nama File Daftar Wahana: ')
+        wahana = input('Masukkan nama File Daftar Wahana: ')
         file_wahana = toArray(wahana)
 
-        beli_tiket = input('Masukkan Nama File Pembelian Tiket: ')
+        beli_tiket = input('Masukkan nama File Pembelian Tiket: ')
         file_beli = toArray(beli_tiket)
 
-        guna_tiket = input('Masukkan Nama File Penggunaan Tiket: ')
+        guna_tiket = input('Masukkan nama File Penggunaan Tiket: ')
         file_pakai = toArray(guna_tiket)
 
-        milik_tiket = input('Masukkan Nama File Kepemilikan Tiket: ')
+        milik_tiket = input('Masukkan nama File Kepemilikan Tiket: ')
         file_kepemilikan = toArray(milik_tiket)
 
-        refund = input('Masukkan Nama File Refund Tiket: ')
+        refund = input('Masukkan nama File Refund Tiket: ')
         file_refund = toArray(refund)
 
-        kritiksaran = input('Masukkan Nama File Kritik dan Saran: ')
+        kritiksaran = input('Masukkan nama File Kritik dan Saran: ')
         file_ks = toArray(kritiksaran)
 
-        tikethilang = input('Masukkan Nama File Kehilangan: ')
+        tikethilang = input('Masukkan nama File Kehilangan Tiket: ')
         file_kehilangan = toArray(tikethilang)
 
         print("File perusahaan Willy Wangky's Chocolate Factory telah di-load.")

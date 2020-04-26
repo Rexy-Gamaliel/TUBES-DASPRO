@@ -15,12 +15,10 @@ import topup_13
 import riwayatwahana_14
 import lihattiket_15
 import keluar_16
-
+import password_B01
 import upgrade_B02
-
+import bestwahana_B03
 import laporhilang_B04
-
-import basics
 
 #Fungsi Utama
 loggedin=False
@@ -61,16 +59,17 @@ while not keluarprogram:
         print("8. Lihat Jumlah Tiket Pemain")
         print("9. Save File")
         print("10. Upgrade akun")
+        print("11. Lihat Wahana terbaik")
         print("0. Exit")
         print()
-        menu=input()
+        menu=input(">>> ")
         print()
         if (menu=="1"):
             file_user = signup_04.signup(file_user)
         elif (menu=="2"):
             caripemain_05.cari_pemain(file_user)
         elif (menu=="3"):
-            cariwahana_06.cariwahana(file_wahana)
+            cariwahana_06.cariWahana(file_wahana)
         elif (menu=="4"):
             lihatks_11.lihat_laporan(file_ks)
         elif (menu=="5"):
@@ -85,8 +84,10 @@ while not keluarprogram:
             save_03.save_file(file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, file_refund, file_ks, file_kehilangan)
         elif(menu=="10"):
             file_user = upgrade_B02.upgradeakun(file_user)
+        elif(menu=="11"):
+            bestwahana_B03.best_wahana(file_wahana, file_beli)
         elif (menu=="0"):
-            keluarprogram= keluar_16.exit(file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, file_refund, file_ks, file_kehilangan)
+            keluarprogram = keluar_16.exit(file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, file_refund, file_ks, file_kehilangan)
         else:
             print("Ups, menu yang kamu pilih tidak ada!")
 
@@ -98,19 +99,18 @@ while not keluarprogram:
         print("Menu:")
         print("1. Cari Wahana")
         print("2. Beli Tiket")
-        print("3. Naik Wahana") #Menggunakan tiket
+        print("3. Naik Wahana")
         print("4. Refund Tiket")
         print("5. Kritik dan Saran")
         print("6. Save File")
-        print("7. Lapor Kehilangan Tiket")
         print("0. Exit")
         print()
-        menu=input()
+        menu=input(">>> ")
         print()
         if (menu=="1"):
-            cariwahana_06.cariwahana(file_wahana)
+            cariwahana_06.cariWahana(file_wahana)
         elif (menu=="2"):
-            (file_user, file_beli, file_kepemilikan) = belitiket_07.beli_tiket(user_info[3], file_user, file_wahana, file_beli, file_kepemilikan)
+            (file_user, file_beli, file_kepemilikan) = belitiket_07.beli(user_info[3], file_user, file_wahana, file_beli, file_kepemilikan)
         elif (menu=="3"):
             (file_kepemilikan, file_pakai) = gunatiket_08.guna_tiket(user_info[3], file_kepemilikan, file_pakai)
         elif (menu=="4"):
@@ -118,10 +118,9 @@ while not keluarprogram:
         elif (menu=="5"):
             file_ks = kritiksaran_10.tulisKritikSaran(user_info[3], file_ks)
         elif (menu=="6"):
-            save_03.save_file(file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, file_refund, file_ks)
-        elif (menu=="7"):
-            file_hilang = laporhilang_B04.hilang(file_hilang, file_kepemilikan)
+            save_03.save_file(file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, file_refund, file_ks, file_kehilangan)
         elif (menu=="0"):
-            keluarprogram = keluar_16.exit (file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, file_refund, file_ks)
+            keluarprogram = keluar_16.exit(file_user, file_wahana, file_beli, file_pakai, file_kepemilikan, file_refund, file_ks, file_kehilangan)
         else:
             print("Ups, menu yang kamu pilih tidak ada!")
+    input()

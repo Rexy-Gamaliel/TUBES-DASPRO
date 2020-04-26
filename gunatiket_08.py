@@ -1,6 +1,6 @@
-
 import basics
-import login_user
+import load_01
+import login_02
 
 #searching array kepemilikan
 def validasi (arrname, uname, idwahana, jumtiket, leng):
@@ -17,7 +17,7 @@ def validasi (arrname, uname, idwahana, jumtiket, leng):
 
                 if sisa == 0:
                     #Menghapus baris array yang memiliki jumlah tiket nol
-                    basics.delete_row (i,arrname,leng)
+                    basics.delete_row(i,arrname,leng)
                 else:
                     arrname[i][2]=str(sisa)
             else:
@@ -34,6 +34,7 @@ def guna_tiket (uname, file_kepemilikan, file_pakai):
     jum_tiket = int(input("Jumlah tiket yang digunakan: "))
 
     #Menghitung panjang array
+
     le = basics.length(file_kepemilikan)
     #Melakukan validasi terhadap input user
     (i,found,file_kepemilikan) = validasi (file_kepemilikan, uname, id_wahana, jum_tiket, le)
@@ -41,7 +42,8 @@ def guna_tiket (uname, file_kepemilikan, file_pakai):
     #Mencetak pesan kesalahan apabila input tidak valid
     if (found==False):
         print ("Tiket Anda tidak valid dalam sistem kami")
-
+    else:
+        print("Selamat bersenang-senang.")
     #Memasukkan data penggunaan tiket user yang valid ke array file_pakai
     #File_pakai adalah array untuk "penggunaan.csv"
     j=0
@@ -53,5 +55,5 @@ def guna_tiket (uname, file_kepemilikan, file_pakai):
             file_pakai[j][3]=str(jum_tiket)
             break
         j+=1
-
+    
     return (file_kepemilikan, file_pakai)

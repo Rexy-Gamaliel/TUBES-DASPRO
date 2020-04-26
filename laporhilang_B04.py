@@ -5,7 +5,7 @@ def hilang (file_hilang, file_kepemilikan):
     uname = input("Masukkan username: ")
     tanggal = input ("Tanggal kehilangan tiket: ")
     id_wahana = input ("ID wahana: ")
-    jum_tiket = int(input ("Jumlah tiket yang dihilangkan: "))
+    jum_tiket = int(input("Jumlah tiket yang dihilangkan: "))
 
     #Menghitung panjang array
     le = basics.length(file_kepemilikan)

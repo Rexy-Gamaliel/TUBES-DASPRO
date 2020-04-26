@@ -4,7 +4,7 @@
 
 def length(array):
     # Menghitung banyak data dalam array
-    # EOF: mark berupa '.'
+    # EOP: mark berupa '.'
     # Semua array hasil load diasumsikan memiliki elemen berupa array
     # dan mengandung setidaknya mark
     count = 0
@@ -43,3 +43,35 @@ def sort_insertion(array, idxBanding):
             array[0] = Temp
     
     return(array)
+
+def sort_insertion_reverse(array, idxBanding):
+    # Sorting: Insertion (descending)
+    # Sama persis dengan fungsi sort_insertion di atas, namun descending
+    
+    # KAMUS
+    # Pass  : proses insertion keberapa
+    # Temp  : menyimpan sementara nilai elemen ke-Pass
+    # idxBanding: index komponen dari elemen array yg akan dibandingkan
+    N = length(array)
+    
+    for Pass in range(1,N):     #Pass dari 1 sampai N-1
+        Temp = array[Pass]
+        #Akan dibandingkan nilai Temp dengan array[i], untuk i [0, Pass-1]
+        i = Pass - 1
+        while (Temp[idxBanding] > array[i][idxBanding] and i > 0):
+            array[i+1] = array[i]   #elemen terurut digeser
+            i -= 1                  #pembandingan digeser ke depan
+        #Temp[idxBanding] <= array[i][idxBanding] atau i = 0 (Temp adalah elemen terbesar)
+        if (Temp[idxBanding] <= array[i][idxBanding]):
+            array[i+1] = Temp   #karena saat keluar loop i yang tepat telah berkurang 1
+        else:
+            array[0] = Temp
+
+
+def delete_row(i, arrname, leng):
+    # i = index awal array yang akan di-delete
+    # leng = panjang array
+    
+    for j in range(i+1, leng):
+        arrname[j-1] = arrname[j]
+    arrname[leng] = ['.']
